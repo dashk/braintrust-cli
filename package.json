@@ -1,0 +1,45 @@
+{
+  "name": "braintrust-cli",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "preinstall": "npx only-allow pnpm",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prepare": "husky"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@oclif/core": "^4.0.17",
+    "braintrust": "^0.0.153",
+    "oclif": "^4.14.19",
+    "typescript": "^5.5.4"
+  },
+  "bin": {
+    "braintrust-cli": "./bin/run.js"
+  },
+  "oclif": {
+    "bin": "braintrust-cli",
+    "commands": "./dist/commands",
+    "dirname": "braintrust-cli",
+    "topicSeparator": " "
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.9.0",
+    "@types/node": "^18.19.44",
+    "eslint": "^9.9.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-react": "^7.35.0",
+    "flag": "5.0.1",
+    "globals": "^15.9.0",
+    "husky": "^9.1.4",
+    "lint-staged": "^15.2.9",
+    "prettier": "3.3.3",
+    "ts-node": "^10.9.2",
+    "typescript-eslint": "^8.1.0"
+  },
+  "lint-staged": {
+    "**/*": "prettier --write --ignore-unknown"
+  }
+}
