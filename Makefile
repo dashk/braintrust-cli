@@ -12,3 +12,6 @@ lint:
 	@echo 'Running ESLint'
 	@npx eslint src/**
 
+publish:
+	@echo 'Publishing to NPM'
+	@pnpm publish
